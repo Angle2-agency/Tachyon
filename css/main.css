@@ -13,42 +13,62 @@
 
 @font-face {
     font-family: 'Avenir';
-    src: url('../fonts/Avenir-Black.eot');
-    src: url('../fonts/Avenir-Black.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Avenir-Black.woff2') format('woff2'),
-        url('../fonts/Avenir-Black.woff') format('woff'),
-        url('../fonts/Avenir-Black.ttf') format('truetype'),
-        url('../fonts/Avenir-Black.svg#Avenir-Black') format('svg');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'LucidaGrandeBold';
-    src: url('../fonts/LucidaGrande-Bold.eot');
-    src: url('../fonts/LucidaGrande-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/LucidaGrande-Bold.woff2') format('woff2'),
-        url('../fonts/LucidaGrande-Bold.woff') format('woff'),
-        url('../fonts/LucidaGrande-Bold.ttf') format('truetype'),
-        url('../fonts/LucidaGrande-Bold.svg#LucidaGrande-Bold') format('svg');
-    font-weight: bold;
+    src: url('../fonts/Avenir-Medium.eot');
+    src: url('../fonts/Avenir-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir-Medium.woff2') format('woff2'),
+        url('../fonts/Avenir-Medium.woff') format('woff'),
+        url('../fonts/Avenir-Medium.ttf') format('truetype'),
+        url('../fonts/Avenir-Medium.svg#Avenir-Medium') format('svg');    
     font-style: normal;
 }
 @font-face {
-    font-family: 'LucidaGrande';
-    src: url('../fonts/LucidaGrande.eot');
-    src: url('../fonts/LucidaGrande.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/LucidaGrande.woff2') format('woff2'),
-        url('../fonts/LucidaGrande.woff') format('woff'),
-        url('../fonts/LucidaGrande.ttf') format('truetype'),
-        url('../fonts/LucidaGrande.svg#LucidaGrande') format('svg');
-    font-weight: normal;
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir-Heavy.eot');
+    src: url('../fonts/Avenir-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir-Heavy.woff2') format('woff2'),
+        url('../fonts/Avenir-Heavy.woff') format('woff'),
+        url(../fonts/'Avenir-Heavy.ttf') format('truetype'),
+        url('../fonts/Avenir-Heavy.svg#Avenir-Heavy') format('svg');    
     font-style: normal;
 }
 
 
 
 
+
+
+#preload-tg {
+    background-image: url('../img/footer-tg-hover.svg');
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -10000px;
+    top: -10000px;
+}
+#preload-tw {
+    background-image: url('../img/footer-tw-hover.svg');
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -10000px;
+    top: -10000px;
+}
+#preload-rd {
+    background-image: url('../img/footer-rd-hover.svg');
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -10000px;
+    top: -10000px;
+}
+#preload-sk {
+    background-image: url('../img/footer-sk-hover.svg');
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -10000px;
+    top: -10000px;
+}
 
 
 * {
@@ -207,7 +227,9 @@ a {
    header classes
    ========================================================================== */
 header {
-    height: 64px;    
+    height: 64px;
+    position: relative;
+    z-index: 10;
 }
 header .wrapper {
     height: 100%;
@@ -259,7 +281,7 @@ header .wrapper {
     padding-top: 23px;
     text-align: center;
     color: #3a3a3a;
-    transition: all 200ms ease;
+    transition: all 300ms ease;
 }
 .header__nav a:hover {
     color: #084aae;
@@ -392,12 +414,12 @@ main.landing {
 main.landing h2 {
     margin: 0 0 0 261px;
     padding: 0;
-    font-family: LucidaGrandeBold;
+    font-family: 'Avenir';
     font-size: 56px;
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
-    line-height: normal;
+    line-height: 1.38;
     letter-spacing: normal;    
     color: #070062;
 }
@@ -436,12 +458,12 @@ main.landing h2 {
 .landing__why-the h3 {
     margin: 0 0 0 261px;
     padding: 0;
-    font-family: 'LucidaGrande';
+    font-family: 'Avenir';
     font-size: 32px;
-    font-weight: normal;
+    font-weight: 500;
     font-style: normal;
     font-stretch: normal;
-    line-height: normal;
+    line-height: 1.38;
     letter-spacing: normal;
     color: #278eff;
 }
@@ -478,7 +500,7 @@ main.landing h2 {
     font-weight: 900;
     font-style: normal;
     font-stretch: normal;
-    line-height: normal;
+    line-height: 1.38;
     letter-spacing: normal;
     color: #070062;
     text-transform: uppercase;
@@ -516,7 +538,7 @@ main.landing h2 {
 .landing .landing__roadmap h2 {
     margin: 0;
     padding: 0;
-    font-family: 'LucidaGrandeBold';
+    font-family: 'Avenir';
     font-size: 56px;
     font-weight: bold;
     font-style: normal;
@@ -647,7 +669,7 @@ main.landing h2 {
 .landing .landing__verification h2 {
     margin: 0;
     padding: 0;
-    font-family: LucidaGrandeBold;
+    font-family: 'Avenir';
     font-size: 56px;
     font-weight: bold;
     font-style: normal;
@@ -715,7 +737,7 @@ main.landing h2 {
 .landing .landing__delegated h2 {
     margin: 0;
     padding: 0;
-    font-family: LucidaGrandeBold;
+    font-family: 'Avenir';
     font-size: 56px;
     font-weight: bold;
     font-style: normal;
@@ -792,11 +814,14 @@ main.landing h2 {
 .landing__subscription {
     margin-top: 116px;
     background-color: #08017e;
+    padding-top: 64px;
+    padding-bottom: 93px;
+    text-align: center;
 }
 .landing .landing__subscription h2 {
-    margin: 64px 0 0 0;
+    margin: 0;
     padding: 0;
-    font-family: 'LucidaGrandeBold';
+    font-family: 'Avenir';
     font-size: 56px;
     font-weight: bold;
     font-style: normal;
@@ -805,4 +830,311 @@ main.landing h2 {
     letter-spacing: normal;
     text-align: center;
     color: #ffffff;
+}
+.landing__subscription_text {
+    margin-top: 24px;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.83;
+    letter-spacing: normal;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+.landing__subscription_form {
+    margin-top: 32px;
+    display: inline-flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.landing__subscription_form input {
+    width: 552px;
+    height: 64px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.83;
+    letter-spacing: normal; 
+    color: #070062;   
+}
+.landing__subscription_form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #b0b0b0;
+}
+.landing__subscription_form input::-moz-placeholder { /* Firefox 19+ */
+  color: #b0b0b0;
+}
+.landing__subscription_form input:-ms-input-placeholder { /* IE 10+ */
+  color: #b0b0b0;
+}
+.landing__subscription_form input:-moz-placeholder { /* Firefox 18- */
+  color: #b0b0b0;
+}
+.landing__subscription_form button {
+    width: 260px;
+    height: 64px;
+    background-color: #ff006b;
+    border: none;
+    outline: none;
+    font-family: 'Avenir';
+    font-size: 18px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    text-align: center;
+    color: #ffffff;
+    transition: all 300ms ease;
+}
+.landing__subscription_form button:hover {
+    background-color: #e6034f;
+}
+.landing__blogs {
+    margin-top: 70px;
+    padding-bottom: 63px;
+}
+.landing .landing__blogs h2 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Avenir';
+    font-size: 56px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: #070062;
+}
+.landing__blogs_list {
+    list-style: none;
+    margin: 32px 0 0 0;
+    padding: 0;
+    display: flex;
+}
+.landing__blogs_list li {
+    width: 320px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.landing__blogs_list li:last-child {
+    margin-right: 0;
+}
+.landing__blogs_list li img {
+    width: 320px;
+    height: 264px;
+}
+.landing__blogs_list li h3 {
+    margin: 16px 0 0 0;
+    padding: 0;
+    font-size: 22px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #3a3a3a;
+}
+.landing__blogs_list li time {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #9b9b9b;
+}
+.landing__blogs_list li span {
+    display: inline-block;
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #9b9b9b;
+}
+.landing__blogs_more {
+    margin-top: 72px;
+    text-align: center;
+}
+.landing__blogs_more a {
+    display: inline-block;
+    font-family: 'Avenir';
+    font-size: 18px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: 1.6px;
+    text-align: center;
+    color: #ff006b;
+    transition: all 300ms ease;
+}
+.landing__blogs_more a:hover {
+    color: #e6034f;
+}
+
+
+/* ==========================================================================
+   Footer classes
+   ========================================================================== */
+footer {
+    background-color: #050139;
+    padding-top: 52px;
+    padding-bottom: 115px;
+}
+footer .wrapper {
+    display: flex;
+}
+.footer__logo {
+    width: 168px;
+    height: 48px;
+    transform: translate(0, -16px);
+    margin-right: 62px;
+}
+.footer__logo img {
+    width: 100%;
+    height: 100%;
+}
+.footer__nav {
+    list-style: none;
+    margin: 0 90px 0 0;
+    padding: 0;
+    display: flex;
+}
+.footer__nav li {
+    
+}
+.footer__nav li.information {
+    margin-right: 62px;
+}
+.footer__nav li.team {
+    margin-right: 44px;
+}
+.footer__nav li h5 {
+    margin: 0 0 16px 0;
+    padding: 0;
+    font-family: 'Avenir';
+    font-size: 13px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+}
+.footer__nav_link {
+    margin-bottom: 12px;
+    font-family: Avenir;
+    font-size: 16px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #ffffff;
+    white-space: nowrap;
+}
+.footer__nav_link a {
+    color: #ffffff;
+    transition: all 300ms ease;
+}
+.footer__nav_link a:hover {
+    color: #ff006b;
+}
+.footer__social {
+    width: 250px;
+}
+.footer__social_links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+.footer__social_links a {
+    width: 29px;
+    height: 29px;    
+    transition: all 300ms ease;
+}
+.footer__social_links a.tl {
+    background: url('../img/footer-tg.svg') no-repeat center;
+}
+.footer__social_links a.tl:hover {
+    background: url('../img/footer-tg-hover.svg') no-repeat center;   
+}
+.footer__social_links a.tw {
+    background: url('../img/footer-tw.svg') no-repeat center;
+}
+.footer__social_links a.tw:hover {
+    background: url('../img/footer-tw-hover.svg') no-repeat center;   
+}
+.footer__social_links a.rd {
+    background: url('../img/footer-rd.svg') no-repeat center;
+}
+.footer__social_links a.rd:hover {
+    background: url('../img/footer-rd-hover.svg') no-repeat center;
+}
+.footer__social_links a.sk {
+    background: url('../img/footer-sk.svg') no-repeat center;
+}
+.footer__social_links a.sk:hover {
+    background: url('../img/footer-sk-hover.svg') no-repeat center;
+}
+.footer__social input {
+    width: 100%;
+    height: 48px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: none;
+    outline: none;
+    padding: 0 19px;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.83;
+    letter-spacing: normal;
+    color: #070062;
+}
+.footer__social input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #b0b0b0;
+}
+.footer__social input::-moz-placeholder { /* Firefox 19+ */
+  color: #b0b0b0;
+}
+.footer__social input:-ms-input-placeholder { /* IE 10+ */
+  color: #b0b0b0;
+}
+.footer__social input:-moz-placeholder { /* Firefox 18- */
+  color: #b0b0b0;
+}
+.footer__social button {
+    margin-top: 24px;
+    width: 100%;    
+    height: 48px;  
+    background-color: #ff006b;
+    border: none;
+    outline: none;
+    font-family: Avenir;
+    font-size: 18px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    text-align: center;
+    color: #ffffff;
+    transition: all 300ms ease;
+}
+.footer__social button:hover {
+    background-color: #e6034f;
 }
