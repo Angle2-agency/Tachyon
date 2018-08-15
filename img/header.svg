@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="629" viewBox="0 0 1440 629">
+    <defs>
+        <path id="a" d="M0 0h1440v629H0z"/>
+        <radialGradient id="c" cx="48.951%" r="46.552%" fx="48.951%" fy="50%">
+            <stop offset="0%" stop-color="#FFF"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="d" width="107.4%" height="107.4%" x="-3.7%" y="-3.7%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="15.134"/>
+        </filter>
+        <radialGradient id="e" cx="48.951%" r="39.049%" fx="48.951%" fy="50%">
+            <stop offset="0%" stop-color="#FFF"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="f" width="115.5%" height="115.5%" x="-7.8%" y="-7.8%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="17.416"/>
+        </filter>
+        <linearGradient id="g" x1="50%" x2="50%" y1="100%" y2="-42.514%">
+            <stop offset="0%" stop-color="#00E8FF"/>
+            <stop offset="100%" stop-color="#004D66"/>
+        </linearGradient>
+        <linearGradient id="h" x1="17.893%" x2="91.939%" y1="76.839%" y2="0%">
+            <stop offset="0%" stop-color="#00E8FF"/>
+            <stop offset="100%" stop-color="#004D66"/>
+        </linearGradient>
+        <linearGradient id="i" x1="0%" y1="50%" y2="50%">
+            <stop offset="0%" stop-color="#00E8FF"/>
+            <stop offset="100%" stop-color="#004D66"/>
+        </linearGradient>
+        <linearGradient id="j" x1="0%" x2="100.001%" y1="50%" y2="50%">
+            <stop offset="0%" stop-color="#00EDFF"/>
+            <stop offset="100%" stop-color="#1400FF"/>
+        </linearGradient>
+        <linearGradient id="k" x1="74.999%" x2="25.897%" y1="25.001%" y2="74.103%">
+            <stop offset="0%" stop-color="#00EDFF"/>
+            <stop offset="100%" stop-color="#1400FF"/>
+        </linearGradient>
+        <linearGradient id="l" x1=".001%" y1="50%" y2="50%">
+            <stop offset="0%" stop-color="#00EDFF"/>
+            <stop offset="100%" stop-color="#1400FF"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="b" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use fill="#278EFF" xlink:href="#a"/>
+        <g mask="url(#b)">
+            <g transform="translate(534 -297)">
+                <circle cx="610" cy="610" r="610" fill="url(#c)" filter="url(#d)"/>
+                <circle cx="610" cy="610" r="337" fill="url(#e)" filter="url(#f)"/>
+            </g>
+            <path fill="url(#g)" d="M55.32 221.496l55.35 55.426 55.355-55.426-27.682-27.709-27.673-27.71z" transform="translate(1032 173)"/>
+            <path fill="url(#h)" d="M0 110.851l55.357 110.844 55.35-55.418V0z" transform="translate(1032 173)"/>
+            <path fill="url(#i)" d="M110.64 166.277l27.674 27.709 27.682 27.709 55.357-110.844L110.64 0z" transform="translate(1032 173)"/>
+            <path fill="url(#j)" fill-opacity=".4" d="M110.705 222.044v55.425l-55.356-55.425L0 111.2l83.03 83.135z" transform="translate(1032 173)"/>
+            <path fill="url(#k)" fill-opacity=".4" d="M221.418 110.851l-83.039 83.135-27.674 27.709-27.675-27.71L0 110.852 110.705 0z" transform="translate(1032 173)"/>
+            <path fill="url(#l)" fill-opacity=".4" d="M221.354 111.2l-55.357 110.844-55.356 55.425v-55.425l27.674-27.71z" transform="translate(1032 173)"/>
+        </g>
+    </g>
+</svg>

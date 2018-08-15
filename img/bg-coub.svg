@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="891" height="629" viewBox="0 0 891 629">
+    <defs>
+        <radialGradient id="a" cx="48.951%" r="46.552%" fx="48.951%" fy="50%">
+            <stop offset="0%" stop-color="#FFF"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="b" width="107.4%" height="107.4%" x="-3.7%" y="-3.7%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="15.134"/>
+        </filter>
+        <radialGradient id="c" cx="48.951%" r="39.049%" fx="48.951%" fy="50%">
+            <stop offset="0%" stop-color="#FFF"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="d" width="115.5%" height="115.5%" x="-7.8%" y="-7.8%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="17.416"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(-15 -297)">
+        <circle cx="610" cy="610" r="610" fill="url(#a)" filter="url(#b)"/>
+        <circle cx="610" cy="610" r="337" fill="url(#c)" filter="url(#d)"/>
+    </g>
+</svg>
